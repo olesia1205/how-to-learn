@@ -14,12 +14,58 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  border: 1px solid red; /*надо будет потом удалить, это для видимости */
+  display: flex;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__logo {
+  width: 228px;
+  height: 32px;
+  position:absolute;
+  top: 30px;
+  left: 64px;
+  border: 1px solid red; /*надо будет потом удалить, это для видимости */
+}
+
+.header__title {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600px;
+  width: 730px;
+  position: absolute;
+  left: 64px;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 0;
+}
+
+.header__header-image {
+  height: 608px;
+  width: 765px;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .header__square-pic {
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
+  position:absolute;
+  top: 64px;
+  right: 0;
+  z-index: -1;
+}
+
+.content {
+  margin-top: 100px;
+  width: 100%;
+  height: 600px; /*надо будет потом удалить, это для видимости */
+  border: 1px solid red; /*надо будет потом удалить, это для видимости */
 }
 
 /* и элемента с модификатором вида ключ-значение */
