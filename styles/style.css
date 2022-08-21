@@ -271,7 +271,7 @@ a.feynman__subtitle_link {
   overflow: hidden;
 }
 
-.digits__table {
+.digits__table_theme_dark {
   margin: 0 0 90px; /* чтобы вставить пробел в 90px между блоком Кауфман и подвалом */
   z-index: 2;
 }
