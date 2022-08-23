@@ -28,10 +28,10 @@
     <!--Контейнер с основным содержимым страницы-->
     <main class="content">
       <!--секция с описанием-->
-      <section class="description">
+      <section class="description" aria-label="Описание">
         <article class="two-columns">
 
-          <h2 class="two-columns__brief" aria-label="Описание">Главные проблемы в обучении</h2>
+          <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
 
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать
@@ -52,53 +52,42 @@
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учебу и мозг</p>
-        <table class="table">
-          <tbody>
-
-            <!--первая строка таблицы о цифрах и фактах-->
-            <tr class="table__row">
-              <td class="table__cell">
-                <h3 class="table__heading">86 миллиардов</h3>
-                <p class="table__text">Число нейронов в мозге человека</p>
-              </td>
-              <td class="table__cell">
-                <h3 class="table__heading">2,1 миллиарда</h3>
-                <p class="table__text">Число нуждающихся в повышении квалификации</p>
-                <p class="table__text">Всемирный Банк, 2017</p>
-              </td>
-              <td class="table__cell">
-                <h3 class="table__heading">1000 терабайт</h3>
-                <p class="table__text">Объем памяти человека</p>
-              </td>
-              <td class="table__cell">
-                <h3 class="table__heading">500 триллионов</h3>
-                <p class="table__text">Число ответственных за обучение нерных синапсов у взролого человека</p>
-              </td>
-            </tr>
-            <!--вторая строка таблицы о цифрах и фактах-->
-            <tr class="table__row">
-              <td class="table__cell">
-                <h3 class="table__heading">420 миллионов</h3>
-                <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
-                </p>
-                <p class="table__text">Всемирный Банк, 2017</p>
-              </td>
-              <td class="table__cell">
-                <h3 class="table__heading">17-20 лет</h3>
-                <p class="table__text">Пик обучаемости</p>
-              </td>
-              <td class="table__cell">
-                <h3 class="table__heading">1885 год</h3>
-                <p class="table__text">Открытие кривой забывания</p>
-              </td>
-              <td class="table__cell">
-                <h3 class="table__heading">1889 год</h3>
-                <p class="table__text">Открытие условного рефлекса</p>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
+        <ul class="table">
+          <li class="table__cell">
+            <h3 class="table__heading">86 миллиардов</h3>
+            <p class="table__text">Число нейронов в мозге человека</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">2,1 миллиарда</h3>
+            <p class="table__text">Число нуждающихся в повышении квалификации</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">1000 терабайт</h3>
+            <p class="table__text">Объем памяти человека</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">500 триллионов</h3>
+            <p class="table__text">Число ответственных за обучение нерных синапсов у взролого человека</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">420 миллионов</h3>
+            <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+            <p class="table__text">Всемирный Банк, 2017</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">17-20 лет</h3>
+            <p class="table__text">Пик обучаемости</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">1885 год</h3>
+            <p class="table__text">Открытие кривой забывания</p>
+          </li>
+          <li class="table__cell">
+            <h3 class="table__heading">1889 год</h3>
+            <p class="table__text">Открытие условного рефлекса</p>
+          </li>
+        </ul>
       </section>
 
       <!--секция про метод Фейнмана-->
@@ -158,7 +147,7 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости</p>
           </li>
         </ul>
-        <div class="kaufman__triangle-pic"></div>
+        <div class="kaufman__triangle"></div>
       </section>
 
     </main>
