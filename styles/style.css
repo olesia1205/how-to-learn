@@ -12,6 +12,15 @@
   position: relative;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header {
   min-height: 600px;
   max-height: 756px;
@@ -22,6 +31,7 @@
   justify-content: center;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -65,6 +75,11 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  opacity: 50%;
+  transition-duration: 0.35s;
+}
+
 .header__main-illustration {
   height: 608px;
   width: 765px;
@@ -86,10 +101,20 @@
   z-index: 1;
 }
 
+.rotation {
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
 .content {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* блок description*/
@@ -142,10 +167,57 @@
   font-weight: 600;
 }
 
+/* блок techniques*/
+.techniques {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.cards__item {
+  margin: 0 100px 0 0;
+  width: 240px;
+}
+
+.cards__item:nth-child(3n) {
+  margin: 0;
+}
+
+.cards__title {
+  text-align: center;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__description {
+  margin: 16px 0 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
 /* блок digits*/
 .digits {
   width: 100%;
-  margin-top: 100px;
+  margin: 100px 0;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -173,7 +245,6 @@
   margin: auto;
   padding: 0;
   justify-content: space-between;
-
 }
 
 .table__cell {
@@ -197,17 +268,54 @@
   font-weight: normal;
 }
 
+/* блок с видео*/
+.video {
+  margin: 100px 0 0;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video__iframes {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  list-style-type: none;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+}
+
+.video__iframe {
+  margin: 0 20px 0 0;
+  width: 515px;
+  height: 316px;
+
+}
+
+.video__iframe:last-child {
+  margin: 0;
+}
+
+/* блок oakley*/
+.oakley {
+  width: 100%;
+  padding-top: 160px;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
 /* блок feynman*/
 .feynman {
   width: 100%;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   min-height: 890px;
   background-color: #f2f2f2;
-
 }
 
 .feynman__title {
@@ -240,6 +348,11 @@
   z-index: 2;
 }
 
+.feynman__link:hover {
+  opacity: 50%;
+  transition: 0.35s;
+}
+
 .feynman__illustration {
   height: 637px;
   width: 867px;
@@ -251,6 +364,84 @@
 
 }
 
+/* блок Салман Хан*/
+.khan {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 50px 0 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  padding-bottom: 68px;
+}
+
+.khan__book-container {
+  display: flex;
+}
+
+.khan__book-pic {
+  height: 620px;
+  width: 608px;
+  object-fit: cover;
+  object-position: 0 0;
+  padding-right: 48px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.khan__buy-link:hover {
+  opacity: 50%;
+  transition: 0.35s;
+}
+
 /* блок kaufman*/
 .kaufman {
   width: 100%;
@@ -260,7 +451,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  /* чтобы треугольник можно было позиционировать абсолютно*/
   overflow: hidden;
 }
 
