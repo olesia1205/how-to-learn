@@ -197,6 +197,9 @@
 
 .cards__title {
   text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .cards__image {
@@ -292,7 +295,7 @@
   margin: 0 20px 0 0;
   width: 515px;
   height: 316px;
-
+  border: 0;
 }
 
 .video__iframe:last-child {
@@ -496,6 +499,35 @@
   background-size: contain;
 }
 
+/* секция про полезные ресурсы*/
+.resources {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 217px;
+  align-items: center;
+}
+
+.resources__logo-zone {
+  margin: 80px auto 0;
+  padding: 0;
+  width: 1100px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.resources__link:hover {
+  opacity: 50%;
+  transition: 0.35s;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
 /* подвал */
 .footer {
   box-sizing: border-box;
@@ -580,8 +612,18 @@
   display: inline;
 }
 
+.footer__column-link:hover {
+  opacity: 50%;
+  transition: 0.35s;
+}
+
 .footer__social-icon {
   margin: 0 10px 0 0;
   width: 16px;
   height: 16px;
+}
+
+.footer__social-icon:hover {
+  opacity: 50%;
+  transition: 0.35s;
 }
