@@ -1,0 +1,7 @@
+.footer__column {
+  display: flex;
+  color: #ffffff;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
