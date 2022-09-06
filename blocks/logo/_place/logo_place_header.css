@@ -3,4 +3,6 @@
   top: 30px;
   left: 64px;
   z-index: 3;
+  background-image: url(../../../images/logo_place_header.svg);
+  background-size: cover;
 }
