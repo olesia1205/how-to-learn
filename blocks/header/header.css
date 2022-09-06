@@ -2,7 +2,6 @@
   min-height: 600px;
   max-height: 756px;
   height: 100vh;
-  /* выше установили ограничения для секции */
   display: flex;
   flex-direction: column;
   justify-content: center;
